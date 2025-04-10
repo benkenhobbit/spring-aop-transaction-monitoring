@@ -58,7 +58,7 @@ Fork this repository to customize it for your specific needs while keeping the a
 ./gradlew bootRun
 ```
 
-## Quick Start (but this time tell me more)
+## Quick Start (but this time tell me more, please)
 
 1. Generally you should add @EnableAspectJAutoProxy in "traditional" Spring projects (not in newer versions of Spring
    Boot) or in specific situations where you want to have explicit control over the AOP configuration or when using
@@ -68,11 +68,11 @@ Fork this repository to customize it for your specific needs while keeping the a
 
 ```properties  
 # Enable transaction monitoring  
-app.monitoring.transaction.enabled=true  
+app.monitoring.transaction.enabled=true
 # Configure log pruning settings  
-app.monitoring.transaction.log-pruning.enabled=true  
-app.monitoring.transaction.log-pruning.max-event-log.size=1000  
-app.monitoring.transaction.log-pruning.max-event-log.time=24  
+app.monitoring.transaction.log-pruning.enabled=true
+app.monitoring.transaction.log-pruning.max-event-log.size=1000
+app.monitoring.transaction.log-pruning.max-event-log.time=24
 ```  
 
 or with YAML:
@@ -81,13 +81,12 @@ or with YAML:
 app:
   monitoring:
     transaction:
-      enabled:
-        true log-pruning:
-          enabled:
-            true log-pruning:
-              max-event-log:
-                size:
-                  1000 time: 24  
+      enabled: true
+      log-pruning:
+        enabled: true
+        max-event-log:
+          size: 1000
+          time: 24
 ```  
 
 ## Configuration Properties
