@@ -148,6 +148,10 @@ that enables transaction monitoring (dafault value is: *false*).
 These test classes make it easy to see the monitoring system in action and understand how to integrate it into your own
 application.
 
+For simplicity and demonstration purposes, only HTTP GET methods have been used. 
+It is recommended to use HTTP response code types and methods appropriately depending on the operation you want 
+to perform.
+
 ## How It Works
 
 The project uses Spring AOP to intercept calls to `@Transactional` methods. For each transaction:
@@ -342,4 +346,3 @@ Created by A. Aquila (GitHub: benkenhobbit)
 ## Acknowledgments
 
 - Inspired by the need for detailed transaction monitoring in Spring Boot applications
-- Thanks to Spring's AOP capabilities that make this monitoring possible
